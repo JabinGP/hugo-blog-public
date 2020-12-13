@@ -1,0 +1,71 @@
+baseURL = "http://blog.jabingp.cn/"
+title = "Jabin's Blog"
+
+languageCode = "en-us"
+summaryLength = 2
+    
+theme = "chunky-poster"
+
+[taxonomies]
+    tag = "tags"
+    series = "series"
+    category = "categories"
+
+[params]
+    # author = "Hugo Authors"
+    description = "不只是编程"
+    homepageImage = "/images/coffee/take-easy.jpeg"
+    dateFormat = "January 2 2006"
+    share = true
+    showLanguageSwitcher = true
+
+    # [params.commento]
+    #     enable = true
+    #     url = "https://somename.commento.io"
+    [params.prismJS]
+        enable = true
+        theme = "okaidia"
+    [params.social]
+        rss = true
+        email = "example@example.com"
+        github = "https://github.com"
+        # facebook = "https://facebook.com"
+        # twitter = "https://twitter.com"
+        # linkedin = "https://linkedin.com"
+        # stack-overflow = "https://stackoverflow.com"
+        # instagram = "https://stackoverflow.com"
+        # weibo = "https://www.weibo.com"
+        # medium = "https://medium.com"
+        # pinterest = "https://pinterest.com"
+        # reddit = "https://reddit.com"
+        # gitlab = "https://gitlab.com"
+        # mastodon = "https://mastodon.social"
+        # keybase = "https://keybase.io/"
+
+        # comment
+        [params.utter]
+            enable = true
+            repo = "JabinGP/hugo-blog-talks" ##换成自己得
+            issueTerm = "pathname"
+            theme = "boxy-light"
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "主页"
+        url = "/"
+        weight = 10
+    [[menu.main]]
+        identifier = "categories"
+        name = "分类"
+        url = "/categories"
+        weight = 10
+    [[menu.main]]
+        identifier = "tags"
+        name = "标签"
+        url = "/tags"
+        weight = 10
+    [[menu.main]]
+        identifier = "about"
+        name = "关于"
+        url = "/about/"
+        weight = 0
