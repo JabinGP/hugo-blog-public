@@ -1,4 +1,4 @@
-baseURL = "http://blog.jabingp.cn/"
+baseURL = "https://hugo-blog-public.vercel.app/"
 title = "Jabin's Blog"
 
 languageCode = "en-us"
