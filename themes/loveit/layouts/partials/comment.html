@@ -57,6 +57,23 @@
             </noscript>
         {{- end -}}
 
+        {{- /* Waline Comment System */ -}}
+        {{- $waline := $comment.waline | default dict -}}
+        {{- if $waline.enable -}}
+            <div id="waline" class="comment"></div>
+            <script src='//unpkg.com/@waline/client/dist/Waline.min.js'></script>
+            <script>
+                new Waline({
+                  el: '#waline',
+                  path: location.pathname,
+                  serverURL: 'https://waline-mongo.vercel.app'
+                });
+            </script>
+            <noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript>
+        {{- end -}}
+
         {{- /* Facebook Comment System */ -}}
         {{- $facebook := $comment.facebook | default dict -}}
         {{- if $facebook.enable -}}

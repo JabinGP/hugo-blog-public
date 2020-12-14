@@ -50,7 +50,7 @@ enableEmoji = true
                 # 主页显示头像的 URL
                 avatarURL = "/images/avatar.jpeg"
                 # 主页显示的网站标题 (支持 HTML 格式)
-                title = "Jabin"
+                title = "JabinGP"
                 # 主页显示的网站副标题
                 subtitle = "不只是编程"
                 # 是否为副标题显示打字机动画
@@ -70,14 +70,17 @@ enableEmoji = true
             Email = "1748511181@qq.com"
         [params.page.comment]
             enable = true
-        [params.page.comment.utterances]
+        # [params.page.comment.utterances]
+        #     enable = true
+        #     # owner/repo
+        #     repo = "JabinGP/hugo-blog-talks" ##换成自己得
+        #     issueTerm = "pathname"
+        #     label = ""
+        #     lightTheme = "github-light"
+        #     darkTheme = "github-dark"
+        [params.page.comment.waline]
             enable = true
-            # owner/repo
-            repo = "JabinGP/hugo-blog-talks" ##换成自己得
-            issueTerm = "pathname"
-            label = ""
-            lightTheme = "github-light"
-            darkTheme = "github-dark"
+
 [taxonomies]
     tag = "tags"
     series = "series"
