@@ -1,20 +1,34 @@
 baseURL = "https://hugo-blog-public.vercel.app/"
 title = "Jabin's Blog"
 
-languageCode = "en-us"
-summaryLength = 2
-    
-theme = "chunky-poster"
+# 网站语言, 仅在这里 CN 大写
+languageCode = "zh-CN"
+languageName = "简体中文"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true # 是否包括中日韩文字
 
-[taxonomies]
-    tag = "tags"
-    series = "series"
-    category = "categories"
+summaryLength = 30# 文章概览字数
+paginate = 12# 默认每页列表显示的文章数目
+# 网站主题
+theme = "loveit"
+
+# 是否使用 robots.txt
+enableRobotsTXT = true
+# 是否使用 git 信息
+enableGitInfo = true
+# 是否使用 emoji 代码
+enableEmoji = true
+
+[author]
+  name = "JabinGP"
+  email = "1748511181@qq.com"
+  link = ""
 
 [params]
+    # 必填，LoveIt版本
+    version = "0.2.X"
     # author = "Hugo Authors"
     description = "不只是编程"
-    homepageImage = "/images/coffee/take-easy.jpeg"
     dateFormat = "January 2 2006"
     share = true
     showLanguageSwitcher = true
@@ -25,47 +39,98 @@ theme = "chunky-poster"
     [params.prismJS]
         enable = true
         theme = "okaidia"
-    [params.social]
-        rss = true
-        email = "example@example.com"
-        github = "https://github.com"
-        # facebook = "https://facebook.com"
-        # twitter = "https://twitter.com"
-        # linkedin = "https://linkedin.com"
-        # stack-overflow = "https://stackoverflow.com"
-        # instagram = "https://stackoverflow.com"
-        # weibo = "https://www.weibo.com"
-        # medium = "https://medium.com"
-        # pinterest = "https://pinterest.com"
-        # reddit = "https://reddit.com"
-        # gitlab = "https://gitlab.com"
-        # mastodon = "https://mastodon.social"
-        # keybase = "https://keybase.io/"
-
         # comment
-        [params.utter]
+        [parmas.home]
+            # RSS 文章数目
+            # rss = 10
+            [params.home.profile]
+                enable = true
+                # Gravatar 邮箱，用于优先在主页显示的头像
+                gravatarEmail = ""
+                # 主页显示头像的 URL
+                avatarURL = "/images/avatar.jpeg"
+                # 主页显示的网站标题 (支持 HTML 格式)
+                title = "Jabin"
+                # 主页显示的网站副标题
+                subtitle = "不只是编程"
+                # 是否为副标题显示打字机动画
+                typeit = true
+                # 是否显示社交账号
+                social = true
+                # 免责声明 (支持 HTML 格式)
+                disclaimer = ""
+                # 主页文章列表
+            [params.home.posts]
+                enable = true
+                # 主页每页显示文章数量
+                paginate = 6
+        [params.social]
+            RSS = true
+            GitHub = "JabinGP"
+            Email = "1748511181@qq.com"
+        [params.page.comment.utterances]
             enable = true
+            # owner/repo
             repo = "JabinGP/hugo-blog-talks" ##换成自己得
             issueTerm = "pathname"
-            theme = "boxy-light"
+            label = ""
+            lightTheme = "github-light"
+            darkTheme = "github-dark"
+[taxonomies]
+    tag = "tags"
+    series = "series"
+    category = "categories"
+
 [menu]
     [[menu.main]]
-        identifier = "home"
-        name = "主页"
-        url = "/"
-        weight = 10
+        identifier = "posts"
+        name = "归档"
+        url = "/posts"
+        weight = 1
     [[menu.main]]
         identifier = "categories"
         name = "分类"
         url = "/categories"
-        weight = 10
+        weight = 2
     [[menu.main]]
         identifier = "tags"
         name = "标签"
         url = "/tags"
-        weight = 10
-    [[menu.main]]
-        identifier = "about"
-        name = "关于"
-        url = "/about/"
-        weight = 0
+        weight = 3
+    # [[menu.main]]
+    #     identifier = "about"
+    #     name = "联系我"
+    #     url = "/about/"
+    #     weight = 4
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Hugo 解析文档的配置
+[markup]
+  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+[params.search]
+  enable = true
+  # 搜索引擎的类型 ("lunr", "algolia")
+  type = "lunr"
+  # 文章内容最长索引长度
+  contentLength = 4000
+  # 搜索框的占位提示语
+  placeholder = ""
+  #  最大结果数目
+  maxResultLength = 10
+  #  结果内容片段长度
+  snippetLength = 50
+  #  搜索结果中高亮部分的 HTML 标签
+  highlightTag = "em"
+  #  是否在搜索索引中使用基于 baseURL 的绝对路径
+  absoluteURL = false
+#   [params.search.algolia]
+#     index = ""
+#     appID = ""
+#     searchKey = ""
+
