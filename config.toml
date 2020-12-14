@@ -68,6 +68,8 @@ enableEmoji = true
             RSS = true
             GitHub = "JabinGP"
             Email = "1748511181@qq.com"
+        [params.page.comment]
+            enable = true
         [params.page.comment.utterances]
             enable = true
             # owner/repo
