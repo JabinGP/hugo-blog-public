@@ -1,13 +1,12 @@
 name: Notify search service to update
-on:
-  deployment_status
+on: deployment_status
 jobs:
-  notify:
-    env:
-        SEARCH_SERVICE_NOTIRY_URL: https://go.jabingp.vercel.app/api/nofity
-    if: github.event.deployment_status.state == "success"
-    runs-on: ubuntu-latest
-    steps:
-        - name: Make a request
-          run: |
-            curl $SEARCH_SERVICE_NOTIRY_URL
+    notify:
+        env:
+            SEARCH_SERVICE_NOTIRY_URL: https://go.jabingp.vercel.app/api/nofity
+        if: ${{github.event.deployment_status.state == "success"}}
+        runs-on: ubuntu-latest
+        steps:
+            - name: Make a request
+              run: |
+                  curl $SEARCH_SERVICE_NOTIRY_URL
