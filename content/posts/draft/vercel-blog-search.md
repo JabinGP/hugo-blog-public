@@ -1,7 +1,7 @@
 ---
 title: "Vercel Blog Search"
 date: 2020-12-16T21:04:01+08:00
-draft: false
+draft: true
 ---
 
 ## 1. 选用工具
@@ -90,7 +90,7 @@ jobs:
             - name: Make a request
               run: |
                   curl $SEARCH_SERVICE_NOTIRY_URL
-                    
+
 ```
 
 > 一开始写if的时候一直出错，在网上查到的都是这么写的`if: github.event.deployment_status.state == "success"`，错误信息为The workflow is not valid. .github/workflows/main.yml (Line: 7, Col: 13): Unexpected symbol: '"success"'. Located at position 41 within expression: github.event.deployment_status.state == "success"，后来发现把"success"双引号换成'success'即可。
