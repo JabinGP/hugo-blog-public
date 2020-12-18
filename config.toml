@@ -1,4 +1,4 @@
-baseURL = "https://hugo-blog-public.vercel.app/"
+# baseURL = "https://blog.jabingp.cn/"
 title = "Jabin's Blog"
 
 # 网站语言, 仅在这里 CN 大写
@@ -28,7 +28,7 @@ enableEmoji = true
     # 必填，LoveIt版本
     version = "0.2.X"
     description = "不只是编程"
-    dateFormat = "2006.2.1"
+    dateFormat = "2006.1.2"
 
     share = true
 
