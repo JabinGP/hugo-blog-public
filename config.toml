@@ -27,59 +27,44 @@ enableEmoji = true
 [params]
     # 必填，LoveIt版本
     version = "0.2.X"
-    # author = "Hugo Authors"
     description = "不只是编程"
-    dateFormat = "January 2 2006"
-    share = true
-    showLanguageSwitcher = true
+    dateFormat = "2006.2.1"
 
-    # [params.commento]
-    #     enable = true
-    #     url = "https://somename.commento.io"
-    [params.prismJS]
+    share = true
+
+    [parmas.home]
+        # RSS 文章数目
+        # rss = 10
+        [params.home.profile]
+            enable = true
+            # Gravatar 邮箱，用于优先在主页显示的头像
+            gravatarEmail = ""
+            # 主页显示头像的 URL
+            avatarURL = "/images/avatar.jpeg"
+            # 主页显示的网站标题 (支持 HTML 格式)
+            title = "JabinGP"
+            # 主页显示的网站副标题
+            subtitle = "不只是编程"
+            # 是否为副标题显示打字机动画
+            typeit = true
+            # 是否显示社交账号
+            social = true
+            # 免责声明 (支持 HTML 格式)
+            disclaimer = ""
+            # 主页文章列表
+        [params.home.posts]
+            enable = true
+            # 主页每页显示文章数量
+            paginate = 6
+    [params.social]
+        RSS = true
+        GitHub = "JabinGP"
+        Email = "1748511181@qq.com"
+    [params.page.comment]
         enable = true
-        theme = "okaidia"
-        # comment
-        [parmas.home]
-            # RSS 文章数目
-            # rss = 10
-            [params.home.profile]
-                enable = true
-                # Gravatar 邮箱，用于优先在主页显示的头像
-                gravatarEmail = ""
-                # 主页显示头像的 URL
-                avatarURL = "/images/avatar.jpeg"
-                # 主页显示的网站标题 (支持 HTML 格式)
-                title = "JabinGP"
-                # 主页显示的网站副标题
-                subtitle = "不只是编程"
-                # 是否为副标题显示打字机动画
-                typeit = true
-                # 是否显示社交账号
-                social = true
-                # 免责声明 (支持 HTML 格式)
-                disclaimer = ""
-                # 主页文章列表
-            [params.home.posts]
-                enable = true
-                # 主页每页显示文章数量
-                paginate = 6
-        [params.social]
-            RSS = true
-            GitHub = "JabinGP"
-            Email = "1748511181@qq.com"
-        [params.page.comment]
-            enable = true
-        # [params.page.comment.utterances]
-        #     enable = true
-        #     # owner/repo
-        #     repo = "JabinGP/hugo-blog-talks" ##换成自己得
-        #     issueTerm = "pathname"
-        #     label = ""
-        #     lightTheme = "github-light"
-        #     darkTheme = "github-dark"
-        [params.page.comment.waline]
-            enable = true
+    [params.page.comment.waline]
+        enable = true
+        visitor = true
 
 [taxonomies]
     tag = "tags"
@@ -134,8 +119,3 @@ enableEmoji = true
   highlightTag = "em"
   #  是否在搜索索引中使用基于 baseURL 的绝对路径
   absoluteURL = false
-#   [params.search.algolia]
-#     index = ""
-#     appID = ""
-#     searchKey = ""
-
