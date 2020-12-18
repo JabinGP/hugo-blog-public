@@ -1,7 +1,6 @@
 ---
 title: "Github Actions"
 date: 2020-12-13T22:35:46+08:00
-images: []
 categories: []
 tags: []
 draft: true
