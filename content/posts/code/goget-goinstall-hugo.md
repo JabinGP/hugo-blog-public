@@ -1,7 +1,6 @@
 ---
 title: "记一次go get安装hugo的坑、go module、goinstall、gobuild。"
 date: 2020-12-08T21:44:29+08:00
-images: []
 categories: ["code"]
 tags: ["golang", "hugo"]
 draft: false

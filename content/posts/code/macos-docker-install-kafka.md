@@ -1,7 +1,6 @@
 ---
 title: "macOS下使用docker安装kafka、遇到的坑与解决方案。"
 date: 2020-12-08T21:39:49+08:00
-images: []
 categories: ["code"]
 tags: ["macos", "kafka", "zookeeper", "docker"]
 draft: false

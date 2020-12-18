@@ -1,7 +1,6 @@
 ---
 title: "Ubuntu使用apt安装最新版golang"
 date: 2020-12-09T21:42:29+08:00
-images: []
 categories: ["code"]
 tags: ["apt", "ubuntu", "golang"]
 draft: false

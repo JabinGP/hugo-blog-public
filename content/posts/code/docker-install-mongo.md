@@ -1,7 +1,6 @@
 ---
 title: "Docker安装MongoDB"
 date: 2020-12-12T17:28:11+08:00
-images: []
 categories: ["code"]
 tags: ["docker", "mongodb"]
 draft: false

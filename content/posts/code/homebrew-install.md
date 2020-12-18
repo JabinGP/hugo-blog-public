@@ -1,7 +1,6 @@
 ---
 title: "使用homebrew安装你电脑上的所有软件吧"
 date: 2020-12-08T21:42:54+08:00
-images: []
 categories: ["code"]
 tags: ["homebrew", "macbook", "macos"]
 draft: false

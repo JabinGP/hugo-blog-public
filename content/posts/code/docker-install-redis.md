@@ -1,7 +1,6 @@
 ---
 title: "docker安装redis、redis-cli测试连接、python api测试连接。"
 date: 2020-12-08T21:41:35+08:00
-images: []
 categories: ["code"]
 tags: ["docker", "redis", "python", "redis-cli"]
 draft: false

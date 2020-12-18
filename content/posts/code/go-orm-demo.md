@@ -1,7 +1,6 @@
 ---
 title: "Go语言ORM框架快速上手，ORM操作Mysql数据库示例"
 date: 2020-12-08T21:38:19+08:00
-images: []
 categories: ["code"]
 tags: ["mysql", "orm", "gorm", "xorm", "database"]
 draft: false

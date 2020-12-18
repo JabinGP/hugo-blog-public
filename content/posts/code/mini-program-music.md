@@ -1,7 +1,6 @@
 ---
 title: "在微信小程序使用播放音乐的方法，以及微信小程序播放背景音乐失败的解决方案汇总"
 date: 2020-12-08T20:08:59+08:00
-images: []
 categories: ["code"]
 tags: ["javascript", "小程序", "网易云音乐", "音乐外链"]
 draft: false
