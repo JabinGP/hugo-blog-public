@@ -1,7 +1,7 @@
 ---
 title: "为hugo静态博客添加搜索功能"
 date: 2020-12-16T21:04:01+08:00
-draft: false
+draft: true
 ---
 
 > 该种添加搜索功能的方式可以部署到自己的云服务，也可以借助Vercel的Serverless Function部署，出于静态博客的特点，本文介绍不需要自己拥有服务器的Vercel部署方式。
