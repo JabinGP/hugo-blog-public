@@ -2,7 +2,7 @@
 title: "CentOS使用Yum升级Git到2.1x新版本"
 date: 2020-12-08T21:13:54+08:00
 categories: ["code"]
-tags: ["linux", "centos", "git", "升级", "yum"]
+tags: ["linux", "centos", "git", "update", "yum"]
 draft: false
 ---
 

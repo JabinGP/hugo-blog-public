@@ -2,7 +2,7 @@
 title: "Cookie、Session是如何保持登录状态的？"
 date: 2020-12-08T21:05:07+08:00
 categories: ["code"]
-tags: ["cookie","session","登录","http"]
+tags: ["cookie","session","login","http"]
 draft: false
 ---
 

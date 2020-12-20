@@ -2,7 +2,7 @@
 title: "Node.js的Koa2中如何使用Session完成登录功能？"
 date: 2020-12-08T21:08:05+08:00
 categories: ["code"]
-tags: ["登录","session","koa","koa2","JavaScript","cookie"]
+tags: ["login","session","koa","koa2","JavaScript","cookie"]
 draft: false
 ---
 

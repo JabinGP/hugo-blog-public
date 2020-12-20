@@ -2,7 +2,7 @@
 title: "iris项目示例，基于AJAX的简易聊天室"
 date: 2020-12-08T21:36:33+08:00
 categories: ["code"]
-tags: ["golang", "ajax", "聊天室"]
+tags: ["golang", "ajax", "chatroom"]
 draft: false
 ---
 

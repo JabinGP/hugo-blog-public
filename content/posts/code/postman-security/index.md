@@ -5,7 +5,7 @@ resources:
 - name: "featured-image"
   src: "1.png"
 categories: ["code"]
-tags: ["springboot","postman","后端","安全"]
+tags: ["springboot","postman","security"]
 draft: false
 ---
 

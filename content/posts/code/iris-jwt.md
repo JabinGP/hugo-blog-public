@@ -2,7 +2,7 @@
 title: "iris的jwt实践，获取jwt、携带jwt、验证jwt、设置过期时间、自定义错误处理函数、格式化错误返回"
 date: 2020-12-08T21:21:30+08:00
 categories: ["code"]
-tags: ["golang", "jwt", "iris", "后端"]
+tags: ["golang", "jwt", "iris"]
 draft: false
 ---
 
