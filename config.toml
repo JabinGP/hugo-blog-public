@@ -27,7 +27,6 @@ enableEmoji = true
 [params]
     # 必填，LoveIt版本
     version = "0.2.X"
-    description = "不只是编程"
     dateFormat = "2006.1.2"
 
     share = true
@@ -44,7 +43,7 @@ enableEmoji = true
             # 主页显示的网站标题 (支持 HTML 格式)
             title = "JabinGP"
             # 主页显示的网站副标题
-            subtitle = "不只是编程"
+            subtitle = "你不需要相信你的所有想法"
             # 是否为副标题显示打字机动画
             typeit = true
             # 是否显示社交账号
