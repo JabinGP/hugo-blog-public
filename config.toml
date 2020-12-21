@@ -1,5 +1,5 @@
 baseURL = "https://blog.jabingp.cn/"
-title = "Jabin's Blog"
+title = "JabinGP Blog"
 
 # 网站语言, 仅在这里 CN 大写
 languageCode = "zh-CN"
