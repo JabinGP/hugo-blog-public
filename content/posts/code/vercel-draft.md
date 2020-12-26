@@ -1,5 +1,5 @@
 ---
-title: "解决Vercel部署Hugo时草稿也出现在博客中的问题"
+title: "解决Vercel部署Hugo时draft:true不生效，草稿也出现在博客中的问题。"
 date: 2020-12-18T09:56:26+08:00
 categories: ["code"]
 tags: ["vercel", "hugo", "draft"]
